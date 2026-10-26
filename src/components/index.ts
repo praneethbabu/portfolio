@@ -1,0 +1,18 @@
+export { Header } from "./Header";
+export { Hero } from "./Hero";
+export { Marquee } from "./Marquee";
+export { About } from "./About";
+export { Services } from "./Services";
+export { Projects } from "./Projects";
+export { Skills } from "./Skills";
+export { Training, Workshops } from "./Training";
+export { Experience } from "./Experience";
+export { Mission } from "./Mission";
+export { Contact } from "./Contact";
+export { Footer } from "./Footer";
+export { ScrollProgress } from "./ScrollProgress";
+export { DynamicIslandNav } from "./DynamicIslandNav";
+export { ProjectModal } from "./ProjectModal";
+export { ResumeModal } from "./ResumeModal";
+export { AnimatedCounter } from "./AnimatedCounter";
+export { RevealOnScroll } from "./RevealOnScroll";

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #F8F9FA;
+    color: #0F172A;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #0F172A;
+    letter-spacing: -0.025em;
+  }
+
+  ::selection {
+    background: #0F172A;
+    color: #F8F9FA;
+  }
+}
+
+@layer utilities {
+  /* Sticky/Fixed background textures for subtle depth */
+  .bg-fixed-image {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Executive Frosted Glass */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.04);
+  }
+
+  /* Professional Clean Card with Micro-Interactions */
+  .clean-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 8px 20px -4px rgba(15, 23, 42, 0.04);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .clean-card:hover {
+    border-color: rgba(15, 23, 42, 0.2);
+    box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.08), 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+    transform: translateY(-3px);
+  }
+
+  /* Interactive Lift on Hover */
+  .card-hover-lift {
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .card-hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px -8px rgba(15, 23, 42, 0.09);
+    border-color: rgba(15, 23, 42, 0.22);
+  }
+
+  /* Subtle Image Zoom on Hover */
+  .group-hover-zoom {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .group:hover .group-hover-zoom {
+    transform: scale(1.04);
+  }
+
+  /* Shimmer gradient overlay */
+  .shimmer-badge {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+  }
+
+  /* Dynamic Gradient Text */
+  .animated-gradient-text {
+    background: linear-gradient(135deg, #0F172A 0%, #334155 50%, #0F172A 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientX 8s ease infinite;
+  }
+
+  /* Technical Mono Badge */
+  .badge-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 0.375rem;
+    background: #F1F5F9;
+    color: #334155;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+  }
+}
+
+/* Custom refined light scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+  border: 2px solid #F8F9FA;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

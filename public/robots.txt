@@ -1,0 +1,6 @@
+# Robots.txt for https://praneethbabu.vercel.app
+User-agent: *
+Allow: /
+
+Host: https://praneethbabu.vercel.app
+Sitemap: https://praneethbabu.vercel.app/sitemap.xml
